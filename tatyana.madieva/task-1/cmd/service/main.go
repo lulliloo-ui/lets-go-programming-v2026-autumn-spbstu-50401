@@ -4,22 +4,19 @@ import "fmt"
 
 func main() {
 	var value1 int
-	_, err1 := fmt.Scan(&value1)
-	if err1 != nil {
+	if _, err := fmt.Scan(&value1); err != nil {
 		fmt.Println("Invalid first operand")
 		return
 	}
 
 	var value2 int
-	_, err2 := fmt.Scan(&value2)
-	if err2 != nil {
+	if _, err := fmt.Scan(&value2); err != nil {
 		fmt.Println("Invalid second operand")
 		return
 	}
 
 	var sOp string
-	_, err3 := fmt.Scan(&sOp)
-	if err3 != nil {
+	if _, err := fmt.Scan(&sOp); err != nil {
 		fmt.Println("Invalid operation")
 		return
 	}
